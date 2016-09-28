@@ -12,6 +12,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'rest-client'
 gem 'omniauth-spotify'
+gem 'rspotify'
 
 group :development, :test do
   gem 'byebug', platform: :mri

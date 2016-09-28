@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/log-in' => 'sessions#new'
+  get '/auth/spotify/callback/', to: 'sessions#create'
+
+  root to: 'pages#index'
 end

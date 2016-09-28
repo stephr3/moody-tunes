@@ -1,0 +1,12 @@
+<h1>Welcome to Moody Tunes!</h1>
+
+<%= form_tag root_path, method: 'get', role: 'search' do %>
+  <%= text_field_tag :artist, params[:artist], class: 'form-control', id: 'track-search' %>
+  <%= submit_tag 'Search for an Artist', name: nil, class: 'btn btn-primary' %>
+<% end %>
+
+<% if @tracks %>
+  <% @tracks.each do |track| %>
+    <li><%= track.name %></li>
+  <% end %>
+<% end %>
