@@ -52,8 +52,5 @@ class SpotifyTracksController < ApplicationController
         }
       ]
     }
-    @options = {
-      pointLabelFontSize: 100
-    }
   end
 end
