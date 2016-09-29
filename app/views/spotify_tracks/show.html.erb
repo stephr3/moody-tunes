@@ -1,6 +1,5 @@
 <h1><%= @track.name %> by <%= @track.artists.first.name %></h1>
-
-<%= radar_chart @data %>
+<%= radar_chart @data, @options %>
 <div class="centered">
   <audio controls="" name="media"><source src=<%= @track.preview_url %> type="audio/mpeg"></audio>
     <br>

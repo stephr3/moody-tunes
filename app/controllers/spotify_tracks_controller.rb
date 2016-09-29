@@ -2,13 +2,22 @@ class SpotifyTracksController < ApplicationController
 
   def index
     if params[:artist].present?
-      @artist = RSpotify::Artist.search(params[:artist]).first
-      @tracks_api = @artist.top_tracks(:US)
-
-      @tracks_api.each do |track|
-        SpotifyTrack.create(name: track.name, spotify_id: track.id)
+      @old_tracks = SpotifyTrack.all
+      @old_tracks.each do |track|
+        track.destroy
       end
-      @spotify_tracks = SpotifyTrack.last(10)
+      @artist = RSpotify::Artist.search(params[:artist]).first
+      if @artist
+        @tracks_api = @artist.top_tracks(:US)
+
+        @tracks_api.each do |track|
+          SpotifyTrack.create(name: track.name, spotify_id: track.id)
+        end
+        @spotify_tracks = SpotifyTrack.last(10)
+        flash[:alert]= ""
+      else
+        flash[:alert]= "Your search returned no artists."
+      end
     end
   end
 
@@ -21,12 +30,12 @@ class SpotifyTracksController < ApplicationController
         "energy",
         "happiness",
         "danceability",
-        "instrumentalness",
-        "acousticness"
+        "acousticness",
+        "speechiness"
       ],
       datasets: [
         {
-          label: "#{@track.name} Dataset",
+          label: "#{@track.name}",
           backgroundColor: "rgba(28,53,216,0.2)",
           borderColor: "rgba(179,181,198,1)",
           pointBackgroundColor: "rgba(179,181,198,1)",
@@ -37,11 +46,14 @@ class SpotifyTracksController < ApplicationController
             @track.audio_features.energy,
             @track.audio_features.valence,
             @track.audio_features.danceability,
-            @track.audio_features.instrumentalness,
-            @track.audio_features.acousticness
+            @track.audio_features.acousticness,
+            @track.audio_features.speechiness,
           ]
         }
       ]
+    }
+    @options = {
+      pointLabelFontSize: 100
     }
   end
 end
