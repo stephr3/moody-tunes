@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rest-client'
 gem 'omniauth-spotify'
 gem 'rspotify'
+gem 'chartjs-ror'
 
 group :development, :test do
   gem 'byebug', platform: :mri

@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
-  get '/log-in' => 'sessions#new'
-  get '/auth/spotify/callback/', to: 'sessions#create'
 
-  root to: 'tracks#index'
+  root to: 'spotify_tracks#index'
 
-  resources :tracks, :only => [:index, :show]
+  resources :spotify_tracks, :only => [:index, :show]
 end

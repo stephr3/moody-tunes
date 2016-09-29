@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=20&offset=0&q=tom%20petty&type=artist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 29 Sep 2016 15:32:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAANSY227bRhCG7/MUhC58Uyfa88GAUSQ9OUicBElaBC2KYg+z
+        EiuKVMiVHSHIu3dJybTsymakOheFAAk7HM38u7Pz7UqfH2XZyNQxb2Izyk6y
+        z2mcLNMaQjscTWNcNCfjsVnkT5pFFfOweuKq+fgCjxswtZt+/3EJ9eo0VvPv
+        FhDj6qgKoYF4io6KfJ7HU4KO4moBp+sco+N1/DzCvMv3xyZjssGnCHVpir+W
+        dbGlpXu2SX1DUrWA8oamdYoxix/I+0VRz56/YReIP3v1g0YURptgX46v8oWq
+        KKpLqG/nupp7uSyK42tzrKIpWjthUiD6r3ATKGvYzGlkCrucZ3XlZqPjbGSL
+        JTSP+1GdJ53TrLO2BleYpsld7+6qZRnrVT+GAlysk0P/jSR9dvXZu01N7fvB
+        HNrJZZOq8O1w0azcFDwUW2m2P43Ni2K1HlWx6X2avJxA/bipysllkg11Z6xC
+        vPaolnGa6tYbYm18mmCVKpl1OrM/+zX6mm212Yx3lbGPlfsu0qDb3Ezg1lZr
+        lUA+mcbWzAXZqnLaezcEJnnOl0nbuAs0ttRpiiTiniOCCLGYBu0kpsxbZUAx
+        k94lDqOtmJe5j9M2qta63za7xVCB9hCjSUCArCHSEReI15oRirEXXAYO1rOg
+        LNYK7RQjGBoQg/E+K8MNBGcZS5mdx9Jgghz32FkUBDCMtEdaUu13isFfsTJ7
+        aJGpDsg4hzxiDjGFDUdUYSeYFpj64JnDyDu4Y2GupGzt3NLMoUv5vppnb1rQ
+        Zab0Wdr62VniYLQ1mFnLkv4bi2qxLExqmo5agvcPWhx2oW4gsZtV3tk3DXGy
+        fn5yH8+2VuvB+El+/f28eH5ZziZPf/rxWXOJ38Lfs/Lh+IkVE5rtw09TdDOL
+        +QVc2+q4L1/Dsrym5RB0vSkdPCiCq0X/6H+I4zt2xW0cD7oN4ViofRqd2ERg
+        HphhzBGZmtt7oZDiXCBjscCIosQfL3ZDB6EhBDKq9+GxxEkC0ZRgUNJRwMox
+        wBQHAC4oWCkcAe4O5TGVe4jBWCNFNTDECEgUsE0cBo64c0opiZTghoOWO8WQ
+        4ZVhe2ihCb8UEFEqBO+wRQZprpzT6ZzQ1HNDlG1f/4XHd5KXHUze+0j4Lcgr
+        nr1+unrx86u3+Hz28uUZPcdvDXv9cORVUt+L3cPIcIfq22QYdNsiw446v4tw
+        kUP2KnezJjvKBsuO9cFlv68M36Ls9PKX8EGdzeOn2cffzs6ofDN5sZw8XNnF
+        /YftYVW/Q/Ttqg+6DZ4He138gggWHJLpNky0INTSdCRolq7nQQoSqBeB+0Sc
+        AwlMtNrnt4JB1CpN0/lEGJUiXX+llSZdSHk6m5wXwrl0JuCdYugggcU+BJbS
+        KhyUgMCo0Qa4DY4Hp5mSEpjl6aZOCFBzCIHTHfhduj35JnsdhhvzcBzf1ye9
+        slH3t8P6DNtYytSoN/tjtP6TojVeOS3qxJdq2dxy7JuoXYIvj778AwAA//8D
+        AKR/eu4wEQAA
+    http_version: 
+  recorded_at: Thu, 29 Sep 2016 15:32:53 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/artists/4tX2TplrkIP4v05BNC903e/top-tracks?country=US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 29 Sep 2016 15:32:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        3i/KmFNTAAA=
+    http_version: 
+  recorded_at: Thu, 29 Sep 2016 15:32:53 GMT
+recorded_with: VCR 3.0.3
