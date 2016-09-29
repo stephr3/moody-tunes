@@ -1,0 +1,13 @@
+<h1>Welcome to Moody Tunes!</h1>
+
+<%= form_tag root_path, method: 'get', role: 'search' do %>
+  <%= text_field_tag :artist, params[:artist], class: 'form-control', id: 'artist-search' %>
+  <%= submit_tag 'Search for an Artist', name: nil, class: 'btn btn-primary' %>
+<% end %>
+
+<% if @spotify_tracks %>
+  <h3><%= @artist.name %>'s Top Tracks</h3>
+  <% @spotify_tracks.each do |spotify_track| %>
+    <li><%=link_to spotify_track.name, spotify_track_path(spotify_track)%></li>
+  <% end %>
+<% end %>

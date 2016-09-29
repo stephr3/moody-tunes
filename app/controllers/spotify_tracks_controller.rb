@@ -19,7 +19,7 @@ class SpotifyTracksController < ApplicationController
     @data ={
       labels: [
         "energy",
-        "valence",
+        "happiness",
         "danceability",
         "instrumentalness",
         "acousticness"
