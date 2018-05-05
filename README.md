@@ -1,5 +1,5 @@
 #  Moody Tunes
-## *By Halle Williams & Stephanie Gurung*
+## *By Halle Williams & Stephanie Roth*
 
 _With this application, a user can search for an artist's top tracks, click on a track, and view a visual analysis of the track's qualities, including energy, speechiness, acousticness, happiness, and danceability. The user can also listen to a preview of the song._
 
@@ -57,4 +57,4 @@ If you are enjoying the Heroku site on a mobile device, you may need to flip the
 License
 -------
 _This software is licensed under the MIT license._<br>
-Copyright (c) 2016 **Stephanie Gurung & Halle Williams**
+Copyright (c) 2016 **Stephanie Roth & Halle Williams**
